@@ -2,12 +2,14 @@
 
 {% load i18n %}
 
-{% block title %}{{ block.super }}{% endblock %}
+{% block title %}{% trans "Search results for:" %} {{ search_term }} | {{ block.super }}{% endblock %}
 {% block body_class %}{{ block.super }} post_list{% endblock %}
 
 {% block content_title %}{% endblock %}
 
 {% block content %}
+  <h2 class="filter-title">{% trans "Search results for:" %} {{ search_term }}</h2>
+
   <div class="post_list">
     {% for object in object_list %}
         {% ifequal object.content_type.name "post" %}

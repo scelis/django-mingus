@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/pygments.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css" media="all" charset="utf-8">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/basic.css" type="text/css" media="all" charset="utf-8">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/themes/scelis.css" type="text/css" media="all" charset="utf-8">
    {% endcompress %}
 
    <!--[if IE 6]>
@@ -57,6 +58,7 @@
 
   <div id="header" class="clearfix">
     <div id="logo">
+      <a href="/"><img src="{{ STATIC_URL }}img/logo.png" height="75" width="75" alt="Logo"></a>
       <h1><a href="/" title="{{ BLOG_SETTINGS.site_name }}">{{ BLOG_SETTINGS.site_name }}</a></h1>
     </div>
     <!-- /logo -->
@@ -82,7 +84,7 @@
         </div>
         <!-- /grid_9 -->
 
-        <div id="right-rail" class="grid_6">
+        <div id="right-rail" class="grid_4">
 
           <h4>{% trans "About" %}</h4>
           <p>{{ BLOG_SETTINGS.about|safe }}</p>
@@ -180,7 +182,7 @@
           {% endcache %}
 
         </div>
-        <!-- /grid_6 -->
+        <!-- /grid_4 -->
       </div>
       <!-- /container_16 -->
 

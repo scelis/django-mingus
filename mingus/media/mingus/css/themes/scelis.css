@@ -1,0 +1,95 @@
+h1 {
+	text-shadow: #CCCCCC 2px 2px 3px;
+}
+
+#logo h1 {
+	float: left;
+	display: inline;
+	margin-top: 14px;
+	margin-left: 5px;
+}
+
+h2 {
+	padding-top: 1px;
+}
+
+h2 a:link, h2 a:visited {
+	color: #f79400;
+	text-shadow: #DDDDDD 2px 2px 2px;
+}
+
+a:link, a:visited {
+	color: #f79400;
+}
+
+a:hover, h2 a:hover {
+	color: #996600;
+}
+
+.post .date, .quote .date, .bookmark .date {
+	background: #f79400;
+}
+
+#nav ul li {
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+#nav ul li a {
+	font-weight: 500;
+}
+
+.post .teaser {
+	border-bottom: solid 10px #606060;
+}
+
+#logo a img {
+	float: left;
+}
+
+.commentslink {
+	font-size: 1.0em;
+}
+
+.body p {
+	margin-bottom: 0.7em;
+}
+
+.body code {
+	color: #444444;
+	background-color: #dddddd;
+	font-size: 1.2em;
+}
+
+/* Page width */
+#header {
+	margin-left: 90px;
+	width: 870px;
+}
+
+.container_16 {
+	width: 880px;
+}
+
+.container_16 .grid_4 {
+	width: 250px;
+}
+
+.container_16 .grid_9 {
+	width: 560px;
+}
+
+.container_16 .suffix_1 {
+	padding-right: 20px;
+}
+
+/* Fix GitHub Gist scrollbar issue. */
+.body .gist .gist-file .gist-data pre {
+    width: auto;
+}
+
+.body .gist {
+	font-size: 0.9em;
+	font-family: monospace;
+	margin-right: -280px;
+}

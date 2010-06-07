@@ -8,3 +8,6 @@ mingus/media/uploads/
 mingus/media/photos/
 django_mingus.egg-info
 mingus/media/CACHE/
+
+# Personal Ignores
+mingus/media/mingus/img/logo.png

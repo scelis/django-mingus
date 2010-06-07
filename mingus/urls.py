@@ -50,14 +50,14 @@ urlpatterns += patterns('',
     (r'^api/springsteen/firehose/$', springsteen_firehose),
     (r'^api/springsteen/category/(?P<slug>[-\w]+)/$', springsteen_category),
 
-    url(r'^contact/$',
-        contact_form,
-        name='contact_form'),
-
-    url(r'^contact/sent/$',
-        direct_to_template,
-        { 'template': 'contact_form/contact_form_sent.html' },
-        name='contact_form_sent'),
+#    url(r'^contact/$',
+#        contact_form,
+#        name='contact_form'),
+#
+#    url(r'^contact/sent/$',
+#        direct_to_template,
+#        { 'template': 'contact_form/contact_form_sent.html' },
+#        name='contact_form_sent'),
 
     url(r'^page/(?P<page>\w)/$',
         view=home_list,

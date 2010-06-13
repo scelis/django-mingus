@@ -1,4 +1,4 @@
-{% load blog tagging_tags inlines oembed_tags pygment_tags %}
+{% load blog tagging_tags inlines oembed_tags pygment_tags disqus_tags %}
 
 <div class="post clearfix">
     <div class="date">{{ object.pub_date|date:"M d" }}</div>
@@ -12,6 +12,10 @@
                 {{ object.description|render_inlines|safe }}
             {% endoembed %}
         </div>
+
+        <p class="commentslink">
+            <a href="{{ object.content_object.get_absolute_url }}#disqus_thread">View Comments</a>
+        </p>
     {% endwith %}
 </div>
 <!-- post -->

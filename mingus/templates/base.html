@@ -114,6 +114,11 @@
           {% endif %}
           {% endcache %}
 
+          <h4>Products</h4>
+          <ul>
+              <li><a href="/products/epicure/">Epicure</a></li>
+          </ul>
+
           {% cache 3600 "base.category_list" %}
           {% get_blog_categories as category_list %}
           {% if category_list %}

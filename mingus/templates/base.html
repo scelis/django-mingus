@@ -90,6 +90,7 @@
           <h4>{% trans "About" %}</h4>
           <p>{{ BLOG_SETTINGS.about|safe }}</p>
 
+          {% comment %}
           <h4>Subscribe</h4>
           <ul>
           {% if BLOG_SETTINGS.twitter_url %}<li><a href="{{ BLOG_SETTINGS.twitter_url }}" title="{% trans "Follow me on Twitter" %}">{% trans "Twitter" %}</a></li>{% endif %}
@@ -99,6 +100,7 @@
       {% if category %}<li><a href="/feeds/categories/{{ category.title|lower }}" title"{% trans "Subscribe via RSS" %}">RSS - {{ category }}</a></li>{% endif %}
         {% if BLOG_SETTINGS_email_subscribe_url %}<li><a href="{{ BLOG_SETTINGS.email_subscribe_url }}" title="{% trans "Subscribe via Email" %}">{% trans "Email" %}</a></li>{% endif %}
           </ul>
+          {% endcomment %}
 
           {% cache 3600 "base.profiles" %}
           {% get_elsewhere_profiles as profiles %}
@@ -136,6 +138,7 @@
           {% endif %}
           {% endcache %}
 
+        {% comment %}
 		{% cache 7200 "base.archive" %}
 		{% get_post_archive as dates %}
 		<h4>{% trans "Archive" %}</h4>
@@ -181,6 +184,7 @@
           </ul>
           {% endif %}
           {% endcache %}
+          {% endcomment %}
 
         </div>
         <!-- /grid_4 -->

@@ -31,7 +31,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.doc.XViewMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
-    'slimmer.middleware.CompressHtmlMiddleware',
     'sugar.middleware.debugging.UserBasedExceptionMiddleware',
     'request.middleware.RequestMiddleware',
     'djangodblog.DBLogMiddleware',

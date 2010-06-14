@@ -83,17 +83,6 @@ a:hover, h2 a:hover {
 	padding-right: 20px;
 }
 
-/* Fix GitHub Gist scrollbar issue. */
-.body .gist .gist-file .gist-data pre {
-    width: auto;
-}
-
-.body .gist {
-	font-size: 0.9em;
-	font-family: monospace;
-	margin-right: -280px;
-}
-
 /* Code Block Styling. */
 pre, pre.prettify
 {

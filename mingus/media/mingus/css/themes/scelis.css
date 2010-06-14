@@ -104,4 +104,20 @@ pre, pre.prettify
 .highlight
 {
 	margin-right: -280px;
+	font-size: 12px;
+}
+
+.code-meta
+{
+	border-right: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	border-top: 1px solid #DDDDDD;
+	margin-right: -280px;
+	background-color: #EAEAEA;
+	color: #666666;
+	font-size: 13px;
+	padding: 0.4em;
+	font-weight: bold;
+	font-family: monospace;
+	text-align: right;
 }

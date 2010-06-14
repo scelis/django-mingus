@@ -10,7 +10,7 @@
 
     <div class="body">
   {% oembed %}
-    {{ post.body_markup|render_inlines|safe }}
+    {{ post.body_markup|safe }}
   {% endoembed %}
     </div>
 </div>

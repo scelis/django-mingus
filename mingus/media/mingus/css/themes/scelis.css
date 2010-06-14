@@ -93,3 +93,15 @@ a:hover, h2 a:hover {
 	font-family: monospace;
 	margin-right: -280px;
 }
+
+/* Code Block Styling. */
+pre, pre.prettify
+{
+	background-color: #F8F8FF;
+	border: 1px solid #DDDDDD;
+}
+
+.highlight
+{
+	margin-right: -280px;
+}
